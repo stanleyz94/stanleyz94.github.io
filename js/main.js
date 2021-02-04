@@ -163,42 +163,42 @@ const projects = [
     img_large:"img/work1_large.png",
     img: "img/work1.jpg",
     description: "Application that request JSON object from the API to generate 12 random users. Clicking the user’s image or name will open a modal window with more detailed information. <br> Built using vanilla JavaScript, HTML, CSS.",
-    url: "https://github.com/stanleyz94/techdegree-project-8"
+    url: "https://stanleyz94.github.io/techdegree-project-8/"
   }, 
   {
     modal: "modal-second",
     img_large:"img/work2_large.png",
     img: "img/work2.jpg",
     description: "Web dashboard that uses JavaScript library Chart.js for data visualization and Local storage to save the settings. <br> Built using vanilla JavaScript, HTML, CSS, and localStorage",
-    url: "https://github.com/stanleyz94/techdegree-project-7"
+    url: "https://stanleyz94.github.io/techdegree-project-7/"
   },
   {
     modal: "modal-third",
     img_large:"img/work3_large.png",
     img: "img/work3.jpg",
     description: "A word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase. <br>Built using vanilla JavaScript.",
-    url: "https://github.com/stanleyz94/techdegree-project-6"
+    url: "https://stanleyz94.github.io/techdegree-project-6/"
   },
   {
     modal: "modal-fourth",
     img_large:"img/work4_large.png",
     img: "img/work4.jpg",
     description: "An interactive photo gallery using JavaScript and CSS Grid Layout.",
-    url: "https://github.com/stanleyz94/techdegree-project-5"
+    url: "https://stanleyz94.github.io/techdegree-project-5/"
   },
   {
     modal: "modal-fifth",
     img_large:"img/work5_large.png",
     img: "img/work5.jpg",
     description: "Project in which I converted the CSS into Sass by splitting the code into several Sass partial files. I minimized repeated values (length units, colors, etc.).",
-    url: "https://github.com/stanleyz94/techdegree-project-4"
+    url: "https://stanleyz94.github.io/techdegree-project-4/"
   },
   {
     modal: "modal-sixth",
     img_large:"img/work6_large.png",
     img: "img/work6.jpg",
     description: "A simple responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes.",
-    url: "https://github.com/stanleyz94/techdegree-project-3"
+    url: "https://stanleyz94.github.io/techdegree-project-3/"
   }
 ];
 
@@ -225,7 +225,7 @@ function generate() {
       
     </div>
     <div class="modal-footer">
-        <a href="${project.url}" class="button"><i class='bx bx-link-external modal-icon'></i>GitHub</a>
+        <a href="${project.url}" class="button"><i class='bx bx-link-external modal-icon'></i>Link</a>
         <a data-close-button type="button" class="button lang">Close</a>
     </div>
   </div>
