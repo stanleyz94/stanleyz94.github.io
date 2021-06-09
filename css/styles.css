@@ -9,7 +9,7 @@
   --first-color-lighten: #fbf9f9;
 
   /*Font and typography*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -216,7 +216,7 @@ img {
   position: relative;
 }
 .active-link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.7rem;
   left: 0;
@@ -398,6 +398,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .skill-logo {
   height: 1rem;
