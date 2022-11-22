@@ -1,0 +1,16 @@
+---
+import Portfolio from '../../../components/ui/portfolio/Portfolio.astro'
+import Modal from '../../../components/ui/portfolio/Modal.astro'
+import Skills from '../../../components/ui/portfolio/Skills.astro'
+import About from '../../../components/ui/portfolio/About.astro'
+import Home from '../../../components/ui/portfolio/Home.astro'
+import projects from '../../../data/projects.json'
+---
+
+<main class="1-main">
+  <Home />
+  <About />
+  <Skills />
+  <Portfolio projects={projects} />
+  <Modal projects={projects} />
+</main>

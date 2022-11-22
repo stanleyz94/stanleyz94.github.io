@@ -1,0 +1,29 @@
+---
+import type { IPortfolioItem } from '../../../types/IPortfolioItem'
+
+type IModalItem = Omit<
+  IPortfolioItem,
+  'dataModalTarget' | 'subtitle' | 'title' | 'type'
+>
+export interface Props extends IModalItem {}
+
+//modal, img_large, img, img_large, url
+const { description, img, img_large, url, modal } = Astro.props
+---
+
+<div class="modal" id={modal}>
+  <div class="modal-header gallery">
+    <a href={img_large}>
+      <img src={img} alt={modal} />
+    </a>
+  </div>
+  <div class="modal-body">
+    <p class="lang">{description}</p>
+  </div>
+  <div class="modal-footer">
+    <a href={url} class="button"
+      ><i class="bx bx-link-external modal-icon"></i>Link</a
+    >
+    <a data-close-button type="button" class="button lang">Close</a>
+  </div>
+</div>

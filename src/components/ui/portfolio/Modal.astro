@@ -1,0 +1,26 @@
+---
+import ModalItem from './ModalItem.astro'
+import type { IPortfolioItem } from '../../../types/IPortfolioItem'
+
+export interface Props {
+  projects: IPortfolioItem[]
+}
+
+const { projects } = Astro.props
+---
+
+<!-- Modal Window -->
+<div class="modal__container">
+  {
+    projects.map((project) => (
+      <ModalItem
+        description={project.description}
+        modal={project.modal}
+        img={project.img}
+        img_large={project.img_large}
+        url={project.url}
+      />
+    ))
+  }
+</div>
+<div id="overlay"></div>

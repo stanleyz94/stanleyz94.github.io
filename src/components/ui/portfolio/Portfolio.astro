@@ -1,0 +1,37 @@
+---
+import PortfolioItem from './PortfolioItem.astro'
+import type { IPortfolioItem } from '../../../types/IPortfolioItem'
+export interface Props {
+  projects: IPortfolioItem[]
+}
+const { projects } = Astro.props
+---
+
+<!-- Portfolio -->
+<section class="portfolio section bd-container" id="portfolio">
+  <span class="section-subtitle lang">My recent works</span>
+  <h2 class="section-title lang">Projects</h2>
+  <div class="portfolio__nav">
+    <span class="portfolio__item active-portfolio lang" data-filter="all"
+      >All</span
+    >
+    <span class="portfolio__item" data-filter=".css">HTML/CSS</span>
+    <span class="portfolio__item" data-filter=".js">Javascript</span>
+    <span class="portfolio__item lang" data-filter=".oth">Other</span>
+  </div>
+
+  <div class="portfolio__container bd-grid">
+    {
+      projects.map((project) => (
+        <PortfolioItem
+          title={project.title}
+          subtitle={project.subtitle}
+          dataModalTarget={project.dataModalTarget}
+          img={project.img}
+          img_large={project.img_large}
+          type={project.type}
+        />
+      ))
+    }
+  </div>
+</section>

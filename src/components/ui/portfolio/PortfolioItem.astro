@@ -1,0 +1,30 @@
+---
+import type { IPortfolioItem } from '../../../types/IPortfolioItem'
+
+type IPortfolioItemOmitted = Omit<
+  IPortfolioItem,
+  'description' | 'url' | 'modal'
+>
+export interface Props extends IPortfolioItemOmitted {}
+
+const { title, subtitle, dataModalTarget, img, img_large, type } = Astro.props
+---
+
+<div class={`portfolio__content mix gallery ${type}`}>
+  <a href={img_large}>
+    <img src={img} alt={title} loading="lazy" class="portfolio__img" />
+  </a>
+  <div class="portfolio__data">
+    <span class="portfolio__subtitle">{subtitle}</span>
+    <span
+      ><h2 class="portfolio__title lang">
+        {title}
+      </h2>
+    </span>
+    <a
+      href="#!"
+      data-modal-target={dataModalTarget}
+      class="button button-link lang">View Details</a
+    >
+  </div>
+</div>

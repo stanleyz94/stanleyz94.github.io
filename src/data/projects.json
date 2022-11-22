@@ -1,0 +1,46 @@
+[ 
+  {
+    "title": "Simple CRUD Fullstack application with Nuxt3",
+    "subtitle": "Nuxt3/Typescript",
+    "dataModalTarget": "#modal-seven",
+    "type": "js",
+    "modal": "modal-seven",
+    "img_large": "img/work10_large.png",
+    "img": "img/work10.jpg",
+    "description": "Simple CRUD Fullstack application with Nuxt3 which shows shows a list of questions with answers. The application includes basic CRUD operations which creates, reads, updates and also deletes questions/answers. Registered users can only have access to perform the above operations, so the application also includes basic authorization and authentication.",
+    "url": "https://github.com/stanleyz94/fullstack-nuxt3"
+  },
+  {
+    "title": "Simple REST API with Node.js and Express",
+    "subtitle": "Node.js/Express/Typescript",
+    "dataModalTarget": "#modal-eight",
+    "type": "js",
+    "modal": "modal-eight",
+    "img_large": "img/work11_large.png",
+    "img": "img/work11.jpg",
+    "description": "REST API with Node.js and Express, which includes some basic endpoints for authentication and authorization.",
+    "url": "https://github.com/stanleyz94/Auth-Rest-Api"
+  },
+  {
+    "title": "IKEA website clone created with Vue and TailwindCSS",
+    "subtitle": "Vue / Vuex / TailwindCSS",
+    "dataModalTarget": "#modal-first",
+    "type": "js css",
+    "modal": "modal-first",
+    "img_large": "img/work7_large.png",
+    "img": "img/work7.jpg",
+    "description": "Application shows a list of wardrobes, which can be filtered/sorted and added to the cart shop. The information on this project is static and is not coming from an API.",
+    "url": "https://github.com/stanleyz94/vue-ecommerce-shop"
+  },
+  {
+    "title": "Selenium Page Object Model in Javascript & Jest",
+    "subtitle": "Javascript / Selenium",
+    "dataModalTarget": "#modal-second",
+    "type": "js oth",
+    "modal": "modal-second",
+    "img_large": "img/work9_large.png",
+    "img": "img/work9.jpg",
+    "description": "Demonstrates a way of organizing Selenium Tests Using the Page Object Model for testing a simple registration page on wizzair.com",
+    "url": "https://github.com/stanleyz94/selenium-page-object-model-javascript"
+  }
+]

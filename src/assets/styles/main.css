@@ -371,6 +371,7 @@ img {
   background: none;
   color: var(--first-color);
   padding: 0;
+  margin-top: auto;
 }
 
 .button-link:hover {
@@ -434,6 +435,8 @@ img {
 }
 
 .portfolio__data {
+  display:flex;
+  flex-direction: column;
   padding: 1.5rem;
 }
 
@@ -603,6 +606,13 @@ img {
   .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio__img {
+    height: 216px;
+    width: 325px;
+  }
+  .portfolio__data {
+    height: 186px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -668,6 +678,10 @@ img {
   .footer__description {
     word-break: keep-all;
   }
+
+  .portfolio__data {
+    height: 260px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -678,6 +692,10 @@ img {
 
   .about__description {
     font-size: var(--h3-font-size);
+  }
+
+  .portfolio__data {
+    height: 227px;
   }
 }
 
