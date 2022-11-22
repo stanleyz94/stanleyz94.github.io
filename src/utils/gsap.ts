@@ -1,17 +1,22 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-export default function initGsap() {
-  gsap.registerPlugin(ScrollTrigger)
-
-  gsap.from('.home__data', { opacity: 0, duration: 2, delay: 0.8, y: 25 })
-  gsap.from('.home__greeting, .home__name, home__profession, .home__button', {
+function expoOutGsap() {
+  gsap.from('.home__data', {
+    opacity: 0,
+    duration: 2,
+    delay: 0.8,
+    y: 25,
+    autoAlpha: 0,
+  })
+  gsap.from('.home__greeting, .home__name, .home__profession, .home__button', {
     opacity: 0,
     duration: 2,
     delay: 1,
     y: 25,
     ease: 'expo:out',
     stagger: 0.2,
+    autoAlpha: 0,
   })
 
   gsap.from('.nav__logo, .nav__toggle', {
@@ -21,6 +26,7 @@ export default function initGsap() {
     y: 25,
     ease: 'expo:out',
     stagger: 0.2,
+    autoAlpha: 0,
   })
   gsap.from('.nav__item', {
     opacity: 0,
@@ -29,6 +35,7 @@ export default function initGsap() {
     y: 25,
     ease: 'expo:out',
     stagger: 0.2,
+    autoAlpha: 0,
   })
   gsap.from('.home__social-icon', {
     opacity: 0,
@@ -37,10 +44,11 @@ export default function initGsap() {
     y: 25,
     ease: 'expo:out',
     stagger: 0.2,
+    autoAlpha: 0,
   })
+}
 
-  /* GSAP Scroll Trigger */
-
+function scrollTriggerGsap() {
   const sectionsScrollTrigger = document.querySelectorAll('section:not(.home)')
 
   sectionsScrollTrigger.forEach((section) => {
@@ -60,4 +68,10 @@ export default function initGsap() {
       }
     )
   })
+}
+
+export default function initGsap() {
+  gsap.registerPlugin(ScrollTrigger)
+  expoOutGsap()
+  scrollTriggerGsap()
 }

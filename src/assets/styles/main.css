@@ -348,6 +348,20 @@ img {
   color: var(--first-color-light);
 }
 
+/* GSAP visibility hidden to visible trick*/
+
+.home__data,
+.home__greeting,
+.home__name,
+.home__profession,
+.home__button,
+.nav__logo,
+.nav__toggle,
+.nav__item,
+.home__social-icon {
+  visibility: hidden;
+}
+
 /* Buttons */
 
 .button {
@@ -435,7 +449,7 @@ img {
 }
 
 .portfolio__data {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 1.5rem;
 }
